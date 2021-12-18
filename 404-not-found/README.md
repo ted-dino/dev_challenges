@@ -54,7 +54,7 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 - [Vue.js](https://vuejs.org/)
 - [Tailwind](https://tailwindcss.com/)
  -->
-## Features
+<!-- ## Features -->
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 <!-- 
