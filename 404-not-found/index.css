@@ -62,13 +62,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* 
-
-font-family: 'Inconsolata', monospace;
-font-family: 'Space Mono', monospace; 
-
-*/
-/* Custom Styles */
 body {
   font-family: "Space Mono", monospace;
 }
@@ -78,7 +71,7 @@ body {
   max-width: 80rem;
 }
 
-h2 {
+.error {
   padding-top: max(2vw, 20px);
   padding-left: 1.5rem;
   font-family: "Inconsolata", monospace;
@@ -89,6 +82,7 @@ h2 {
 }
 
 main {
+  margin-top: clamp(64px, 5vw, 200px);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -99,12 +93,35 @@ main {
 }
 
 .hero-title {
-  max-width: 586px;
-  font-size: clamp(3rem, 4.5vw, 4.25rem);
-  line-height: max(71px, 95px);
-  letter-spacing: -0.035em;
+  max-width: 36.75rem;
+  font-size: clamp(42px, 4vw, 64px);
+  line-height: clamp(71px, 5vw, 95px);
 }
 
-/* main section {
-  width: clamp(286.83px, 100%, 539.22px);
-} */
+.right-side {
+  margin-inline: clamp(30px, 3.5vw, 120px);
+}
+.hero-text {
+  margin-top: 30px;
+  margin-bottom: 88px;
+  max-width: 381px;
+  font-size: clamp(18px, 1.3vw, 24px);
+  letter-spacing: -0.035em;
+  color: #4f4f4f;
+}
+
+.hero-link {
+  padding: 23px 43px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333333;
+  text-transform: uppercase;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
