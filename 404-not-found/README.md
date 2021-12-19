@@ -44,4 +44,4 @@ This application/site was created as a submission to a [DevChallenges](https://d
 ## Contact
 
 - GitHub [ted-dino](https://github.com/ted-dino)
-- Email [link](ted23@tutanota.com)
+- <a href="mailto:ted23@tutanota.com">Email</a>
