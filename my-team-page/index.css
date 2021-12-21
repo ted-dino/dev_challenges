@@ -34,6 +34,7 @@ body {
 
 .container {
   margin-inline: auto;
+  padding-inline: 1rem;
   max-width: 81rem;
 }
 
@@ -45,10 +46,6 @@ body {
   margin-top: 6em;
   grid-template-columns: repeat(2, auto);
   grid-template-areas: "header__title introduction";
-}
-
-.header > * {
-  margin-inline: 0.75rem;
 }
 
 .header .header__title {
@@ -86,45 +83,103 @@ body {
 }
 
 .teams {
-  padding-top: 5em;
-  grid-template-columns: auto auto auto;
-  justify-content: space-around;
-  row-gap: 4.8rem;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .team {
-  display: inline-grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: 1fr auto;
 }
 
-.team__name {
-  grid-row-start: 2;
-}
-.team__image {
-  width: 14.875rem;
-}
-.team__position {
-  writing-mode: vertical-rl;
+.team:nth-child(even) {
+  margin-top: 100px;
 }
 
-@media (max-width: 81.75rem) {
+.team__name {
+  margin-top: 0.625rem;
+  grid-row-start: 2;
+  font-size: clamp(14px, 1.5vw, 18px);
+}
+.team__image {
+  width: clamp(139px, 18vw, 238px);
+}
+.team__position {
+  margin-left: 0.625em;
+  writing-mode: vertical-rl;
+  font-family: var(--ff-serif-ptserif);
+  font-size: clamp(10px, 1vw, 12px);
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+footer * {
+  margin-top: 100px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #bdbdbd;
+}
+footer p a {
+  font-weight: bolder;
+}
+
+@media (min-width: 750px) {
   .teams {
-    margin-inline: 0.75rem;
-    grid-template-columns: auto auto;
-    justify-content: space-around;
+    grid-template-columns: repeat(3, auto);
+  }
+  .team:nth-child(even) {
+    margin-top: 0;
+  }
+  .team:nth-child(2),
+  .team:nth-child(5) {
+    margin-top: 150px;
   }
 }
 
-/* .team__image {
-  grid-area: image;
-}
-.team__name {
-  grid-area: name;
-  grid-row-start: 6;
-}
-.team__position {
-  grid-area: position;
+@media (max-width: 374px) {
+  .teams {
+    margin-top: 3.125em;
+    justify-content: center;
+    grid-template-columns: auto;
+    gap: 4em;
+  }
+  .team:nth-child(even) {
+    margin-top: 0;
+  }
+  .team__image {
+    width: 14.875em;
+  }
 }
 
- */
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+.team__image:hover {
+  animation: wiggle 2s ease 0s normal forwards;
+}
