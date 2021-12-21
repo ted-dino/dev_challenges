@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://ted-dino.github.io/dev_challenges/404-not-found/">
+    <a href="https://ted-dino.github.io/responsive-web-developer/404-not-found/">
       Demo
     </a>
     <span> | </span>
