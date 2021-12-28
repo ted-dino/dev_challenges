@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+/* 
+font-family: 'Montserrat', sans-serif;
+
+font-family: 'Playfair Display', serif;
+ */
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: "Playfair Display", serif;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  padding-inline: 11px;
+  margin-inline: auto;
+  max-width: 90rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.header {
+  margin-top: clamp(32px, 5vw, 52px);
+}
+
+.header-title {
+  font-size: clamp(24px, 3vw, 48px);
+  line-height: 64px;
+}
+.header-intro {
+  max-width: 38rem;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  line-height: 1.0625rem;
+  color: #4f4f4f;
+}
+
+.header-intro__dot {
+  margin-top: 0.4375em;
+  margin-right: 0.75em;
+  min-width: 0.8125rem;
+}
