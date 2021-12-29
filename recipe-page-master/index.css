@@ -40,10 +40,10 @@ img {
 
 .header-title {
   font-size: clamp(24px, 3vw, 48px);
-  line-height: 64px;
+  line-height: clamp(10px, 10vw, 64px);
 }
 .header-intro {
-  max-width: 38rem;
+  max-width: 37rem;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-weight: 500;
@@ -56,4 +56,44 @@ img {
   margin-top: 0.4375em;
   margin-right: 0.75em;
   min-width: 0.8125rem;
+}
+
+.main {
+  margin-top: clamp(12px, 4vw, 43px);
+}
+
+.overview {
+  margin-top: clamp(30px, 3vw, 48px);
+}
+
+.graham {
+  margin-top: clamp(13px, 2vw, 32px);
+}
+
+.cheesecake {
+  margin-top: 2.375rem;
+}
+
+.ingredient-header {
+  margin-bottom: clamp(23px, 2vw, 30px);
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.ingredient label {
+  margin-left: clamp(9px, 1vw, 17px);
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.overview {
+  flex-direction: column;
+}
+
+.overview-ingredients {
+  order: 2;
 }
