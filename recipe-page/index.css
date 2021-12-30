@@ -83,6 +83,7 @@ img {
 
 .overview {
   margin-top: clamp(30px, 3vw, 48px);
+  margin-bottom: clamp(26px, 4vw, 57px);
 }
 
 .graham {
@@ -168,6 +169,33 @@ img {
   border-radius: 6px;
 }
 
+.source__link {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+.source__link:hover,
+.source__link:focus {
+  font-weight: bolder;
+}
+
+footer {
+  margin-top: 5.8125rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+}
+
+footer a {
+  text-decoration: none;
+  color: #828282;
+  font-weight: bolder;
+}
 @media (min-width: 45.625rem) {
   .overview {
     flex-direction: row;
