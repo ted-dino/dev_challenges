@@ -107,7 +107,7 @@ img {
   width: 21px;
 }
 
-.ingredients input[type="checkbox"]:checked + .right-side {
+.ingredients input[type="checkbox"]:not(:checked) + .right-side {
   text-decoration: line-through;
 }
 
