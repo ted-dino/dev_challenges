@@ -56,4 +56,4 @@ $ code .
 ```
 ## Contact
 
-- Email [your-website.com](https://{your-web-site-link})>
+- <a href="mailto:ted23@tutanota.com">Email</a>
