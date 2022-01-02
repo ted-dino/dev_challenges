@@ -38,16 +38,32 @@ body {
   align-items: center;
 }
 
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
 .header {
   margin-top: clamp(32px, 5vw, 64px);
 }
 
-.heading {
+.checkout {
   font-style: normal;
   font-weight: 600;
   font-size: clamp(1.5rem, 1.29rem + 1.07vw, 2.25rem);
   line-height: 44px;
   color: #4e5150;
+}
+
+.main {
+  flex-direction: column;
+}
+
+.biling {
+  order: 2;
 }
 
 .email {
@@ -57,12 +73,87 @@ body {
 /* ordered-items */
 
 .ordered-items {
+  order: 1;
   background: #f2f2f2;
   border-radius: 12px;
+  max-width: 23.9375rem;
+}
+
+.item {
+  padding: 1.9375em 0.9375em;
+  gap: 0.9375rem;
 }
 
 .item__image {
   height: 136.27360581579214px;
   width: 134.20564316218895px;
   border-radius: 13px;
+}
+
+.item__name {
+  margin-bottom: 0.375rem;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4e5150;
+}
+
+.item__discounted-price {
+  margin-right: 0.5rem;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f2994a;
+}
+
+.item__original-price {
+  font-size: 10px;
+  line-height: 12px;
+  text-decoration-line: line-through;
+  color: #4e5150;
+}
+
+.item__piece {
+  text-align: center;
+  height: 3.125rem;
+  width: 7.625rem;
+  border-radius: 12px;
+  border: 1px solid #828282;
+  outline: none;
+}
+
+.number {
+  margin-top: 2.5rem;
+}
+
+.number .material-icons {
+  margin-inline: 0.625rem;
+  background: #e0e0e0;
+  border-radius: 4px;
+  color: #828282;
+  cursor: pointer;
+}
+
+.material-icons--add {
+  right: 0;
+}
+
+.costs {
+  margin: 1.5rem 0.9375rem;
+  margin-inline: 0.9375rem;
+}
+
+.shipping,
+.total {
+  padding-top: 0.625rem;
+  border-top: 1px solid #bdbdbd;
+  justify-content: space-between;
+}
+
+.costs__name {
+  font-size: 0.875rem;
+  color: #333333;
+}
+
+.costs__price {
+  font-size: 0.875rem;
+  color: #333333;
 }

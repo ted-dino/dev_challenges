@@ -24,9 +24,9 @@
   </head>
   <body>
     <header class="container header">
-      <h1 class="heading">Checkout</h1>
+      <h1 class="checkout">Checkout</h1>
     </header>
-    <main class="container flex">
+    <main class="main container flex">
       <section class="biling">
         <div class="cta">
           <form action="">
@@ -53,16 +53,62 @@
             alt="backbag photo"
             class="item__image"
           />
-          <div>
+          <div class="position-relative">
             <h4 class="item__name">Vintage Backbag</h4>
             <span class="item__discounted-price">$54.99</span>
             <span class="item__original-price">$94.99</span>
 
             <div class="number flex">
-              <span class="material-icons"> remove </span>
-              <input type="text" value="1" />
-              <span class="material-icons"> add </span>
+              <span
+                class="material-icons material-icons--remove position-absolute"
+              >
+                remove
+              </span>
+              <input type="text" value="1" class="item__piece" />
+              <span
+                class="material-icons material-icons--add position-absolute"
+              >
+                add
+              </span>
             </div>
+          </div>
+        </div>
+
+        <div class="item flex">
+          <img
+            src="./assets/photo2.png"
+            alt="shoes photo"
+            class="item__image"
+          />
+          <div class="position-relative">
+            <h4 class="item__name">Levi Shoes</h4>
+            <span class="item__discounted-price">$74.99</span>
+            <span class="item__original-price">$124.99</span>
+
+            <div class="number flex">
+              <span
+                class="material-icons material-icons--remove position-absolute"
+              >
+                remove
+              </span>
+              <input type="text" value="1" class="item__piece" />
+              <span
+                class="material-icons material-icons--add position-absolute"
+              >
+                add
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="costs">
+          <div class="shipping flex">
+            <span class="costs__name">Shipping</span>
+            <span class="costs__price">$19</span>
+          </div>
+          <div class="total flex">
+            <span class="costs__name">Total</span>
+            <span class="costs__price">$148.98</span>
           </div>
         </div>
       </section>
