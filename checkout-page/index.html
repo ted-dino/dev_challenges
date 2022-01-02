@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./index.css" />
     <link
       rel="shortcut icon"
@@ -19,8 +23,49 @@
     <title>Checkout</title>
   </head>
   <body>
-    <main>
-      <h1>Checkout</h1>
+    <header class="container header">
+      <h1 class="heading">Checkout</h1>
+    </header>
+    <main class="container flex">
+      <section class="biling">
+        <div class="cta">
+          <form action="">
+            <div class="email flex">
+              <label for="email">E-mail</label>
+              <div class="flex">
+                <span class="material-icons"> email </span>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="email__input"
+                  placeholder="Enter your email..."
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="ordered-items">
+        <div class="item flex">
+          <img
+            src="./assets/photo1.png"
+            alt="backbag photo"
+            class="item__image"
+          />
+          <div>
+            <h4 class="item__name">Vintage Backbag</h4>
+            <span class="item__discounted-price">$54.99</span>
+            <span class="item__original-price">$94.99</span>
+
+            <div class="number flex">
+              <span class="material-icons"> remove </span>
+              <input type="text" value="1" />
+              <span class="material-icons"> add </span>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
