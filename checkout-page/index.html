@@ -28,12 +28,13 @@
     </header>
     <main class="main container flex">
       <section class="biling">
+        <h3 class="billing-title">Contact infomation</h3>
         <div class="cta">
-          <form action="">
-            <div class="email flex">
+          <form action="" method="post">
+            <div class="cta-container flex">
               <label for="email">E-mail</label>
-              <div class="flex">
-                <span class="material-icons"> email </span>
+              <div class="input-container flex">
+                <span class="material-icons input-icon"> email </span>
                 <input
                   type="email"
                   name="email"
@@ -43,7 +44,94 @@
                 />
               </div>
             </div>
+            <div class="cta-container flex">
+              <label for="phone">Phone</label>
+              <div class="input-container flex">
+                <span class="material-icons input-icon"> phone </span>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  class="email__input"
+                  placeholder="Enter your phone..."
+                />
+              </div>
+            </div>
           </form>
+        </div>
+
+        <div class="address">
+          <h3 class="billing-title">Shipping address</h3>
+          <div class="cta-container flex">
+            <label for="name">Full name</label>
+            <div class="input-container flex">
+              <span class="material-icons input-icon"> account_circle </span>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="email__input"
+                placeholder="Enter your name..."
+                value="Rick Astley"
+              />
+            </div>
+          </div>
+          <div class="cta-container flex">
+            <label for="address">Address</label>
+            <div class="input-container flex">
+              <span class="material-icons input-icon"> home </span>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                class="email__input"
+                placeholder="Your address.."
+              />
+            </div>
+          </div>
+          <div class="cta-container flex">
+            <label for="city">City</label>
+            <div class="input-container flex">
+              <span class="material-icons input-icon"> apartment </span>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                class="email__input"
+                placeholder="Your city.."
+              />
+            </div>
+          </div>
+          <div class="flex">
+            <div class="cta-container flex">
+              <label for="public">City</label>
+              <div class="input-container flex">
+                <span class="material-icons input-icon"> public </span>
+                <input
+                  type="text"
+                  name="public"
+                  id="public"
+                  class="email__input"
+                  placeholder="Your city.."
+                />
+              </div>
+            </div>
+            <div class="cta-container flex">
+              <label for="code">City</label>
+              <div class="input-container flex">
+                <span class="material-icons input-icon">
+                  markunread_mailbox
+                </span>
+                <input
+                  type="text"
+                  name="code"
+                  id="code"
+                  class="email__input"
+                  placeholder="Your postal code.."
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="ordered-items">

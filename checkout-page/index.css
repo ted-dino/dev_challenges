@@ -63,16 +63,61 @@ body {
 }
 
 .biling {
+  width: 100%;
+  margin-top: clamp(39px, 10vw, 60px);
   order: 2;
 }
 
-.email {
+.billing-title {
+  font-size: clamp(0.88rem, 0.79rem + 0.38vw, 1.13rem);
+  line-height: 17px;
+  color: #333333;
+}
+
+.cta-container {
   flex-direction: column;
+}
+
+.cta-container label {
+  margin: 0.8125rem 0 0.4375rem 0;
+  align-self: flex-start;
+  font-size: 0.6875rem;
+  line-height: 15px;
+  color: #4f4f4f;
+}
+
+.input-container {
+  width: 100%;
+  position: relative;
+}
+
+.email__input {
+  width: 100%;
+  max-width: 29.0625rem;
+  padding: 12px clamp(39px, 5vw, 52px);
+  font-size: clamp(0.75rem, 0.66rem + 0.38vw, 1rem);
+  line-height: 15px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 12px;
+  color: #000;
+  outline: none;
+}
+
+.input-icon {
+  position: absolute;
+  left: 0.875rem;
+  color: #828282;
+}
+
+.address {
+  margin-top: clamp(45px, 5vw, 58px);
 }
 
 /* ordered-items */
 
 .ordered-items {
+  padding-inline: clamp(15px, 4vw, 30px);
   order: 1;
   background: #f2f2f2;
   border-radius: 12px;
@@ -80,8 +125,8 @@ body {
 }
 
 .item {
-  padding: 1.9375em 0.9375em;
-  gap: 0.9375rem;
+  margin-top: 1.875rem;
+  gap: clamp(15px, 4vw, 30px);
 }
 
 .item__image {
@@ -92,21 +137,21 @@ body {
 
 .item__name {
   margin-bottom: 0.375rem;
-  font-size: 12px;
+  font-size: clamp(0.75rem, 0.66rem + 0.38vw, 1rem);
   line-height: 15px;
   color: #4e5150;
 }
 
 .item__discounted-price {
   margin-right: 0.5rem;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 17px;
   color: #f2994a;
 }
 
 .item__original-price {
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 0.625rem;
+  line-height: 0.6875em;
   text-decoration-line: line-through;
   color: #4e5150;
 }
@@ -114,7 +159,8 @@ body {
 .item__piece {
   text-align: center;
   height: 3.125rem;
-  width: 7.625rem;
+  width: 100%;
+  max-width: 158px;
   border-radius: 12px;
   border: 1px solid #828282;
   outline: none;
@@ -143,13 +189,13 @@ body {
 
 .shipping,
 .total {
-  padding-top: 0.625rem;
   border-top: 1px solid #bdbdbd;
   justify-content: space-between;
 }
 
 .costs__name {
-  font-size: 0.875rem;
+  padding-block: 0.625em;
+  font-size: clamp(0.88rem, 0.79rem + 0.38vw, 1.13rem);
   color: #333333;
 }
 
