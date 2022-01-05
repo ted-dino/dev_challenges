@@ -21,6 +21,7 @@
       type="image/x-icon"
     />
     <title>Checkout</title>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header class="container header">
@@ -102,23 +103,24 @@
               />
             </div>
           </div>
-          <div class="flex">
-            <div class="cta-container flex">
-              <label for="public">City</label>
+          <div class="flex" style="gap: clamp(23px, 3vw, 31px)">
+            <div class="cta-container flex" style="max-width: 217px">
+              <label for="public">Country</label>
               <div class="input-container flex">
                 <span class="material-icons input-icon"> public </span>
-                <input
-                  type="text"
-                  name="public"
-                  id="public"
-                  class="email__input"
-                  placeholder="Your city.."
-                />
+                <select name="languages" id="lang" class="email__input">
+                  <option value="" disabled selected hidden>
+                    Your country..
+                  </option>
+                  <option value="japan">Japan</option>
+                  <option value="canada">Canada</option>
+                  <option value="russia">Russia</option>
+                </select>
               </div>
             </div>
             <div class="cta-container flex">
-              <label for="code">City</label>
-              <div class="input-container flex">
+              <label for="code">Postal code</label>
+              <div class="input-container flex" style="max-width: 217px">
                 <span class="material-icons input-icon">
                   markunread_mailbox
                 </span>
@@ -127,12 +129,19 @@
                   name="code"
                   id="code"
                   class="email__input"
-                  placeholder="Your postal code.."
+                  placeholder="Postal code.."
                 />
               </div>
             </div>
           </div>
         </div>
+        <div style="margin-top: clamp(16px, 3vw, 22px)">
+          <input type="checkbox" id="confirm" name="confirm" />
+          <label for="confirm" style="font-size: 11px; color: #4f4f4f"
+            >Save this information for next time</label
+          >
+        </div>
+        <button>Continue</button>
       </section>
       <section class="ordered-items">
         <div class="item flex">

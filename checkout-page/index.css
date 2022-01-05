@@ -28,7 +28,8 @@ body {
 }
 
 .container {
-  padding-inline: min(4vw, 14.875rem);
+  padding-inline: min(6%, 14.875rem);
+
   margin-inline: auto;
   max-width: 90rem;
 }
@@ -51,7 +52,6 @@ body {
 }
 
 .checkout {
-  font-style: normal;
   font-weight: 600;
   font-size: clamp(1.5rem, 1.29rem + 1.07vw, 2.25rem);
   line-height: 44px;
@@ -63,7 +63,6 @@ body {
 }
 
 .biling {
-  width: 100%;
   margin-top: clamp(39px, 10vw, 60px);
   order: 2;
 }
@@ -102,6 +101,7 @@ body {
   border-radius: 12px;
   color: #000;
   outline: none;
+  background-color: #fff;
 }
 
 .input-icon {
@@ -202,4 +202,27 @@ body {
 .costs__price {
   font-size: 0.875rem;
   color: #333333;
+}
+
+button {
+  float: right;
+  margin-top: clamp(20px, 2.5vw, 2.5rem);
+  padding: 1.0625rem 2.8125rem;
+  font-size: 16px;
+  line-height: 20px;
+  background: #f2994a;
+  border-radius: 12px;
+  color: #ffffff;
+  border: none;
+}
+
+@media (min-width: 62.5rem) {
+  .main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .biling {
+    order: 1;
+  }
 }
