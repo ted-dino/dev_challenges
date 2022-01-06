@@ -31,7 +31,7 @@
       <section class="biling">
         <h3 class="billing-title">Contact infomation</h3>
         <div class="cta">
-          <form action="" method="post">
+          <form action="/" method="post" onsubmit="event.preventDefault()">
             <div class="cta-container flex">
               <label for="email">E-mail</label>
               <div class="input-container flex">
@@ -42,6 +42,7 @@
                   id="email"
                   class="email__input"
                   placeholder="Enter your email..."
+                  required
                 />
               </div>
             </div>
@@ -54,11 +55,12 @@
                   name="phone"
                   id="phone"
                   class="email__input"
-                  placeholder="Enter your phone..."
+                  placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" 
+                  required
                 />
               </div>
             </div>
-          </form>
+          
         </div>
 
         <div class="address">
@@ -74,6 +76,7 @@
                 class="email__input"
                 placeholder="Enter your name..."
                 value="Rick Astley"
+                required
               />
             </div>
           </div>
@@ -87,6 +90,7 @@
                 id="address"
                 class="email__input"
                 placeholder="Your address.."
+                required
               />
             </div>
           </div>
@@ -100,6 +104,7 @@
                 id="city"
                 class="email__input"
                 placeholder="Your city.."
+                required
               />
             </div>
           </div>
@@ -108,7 +113,12 @@
               <label for="public">Country</label>
               <div class="input-container flex">
                 <span class="material-icons input-icon"> public </span>
-                <select name="languages" id="lang" class="email__input">
+                <select
+                  name="country"
+                  id="lang"
+                  class="email__input"
+                  required
+                >
                   <option value="" disabled selected hidden>
                     Your country..
                   </option>
@@ -130,18 +140,20 @@
                   id="code"
                   class="email__input"
                   placeholder="Postal code.."
+                  required
                 />
               </div>
             </div>
           </div>
         </div>
+        <button onclick="handleClick()">Continue</button>
+      </form>
         <div style="margin-top: clamp(16px, 3vw, 22px)">
           <input type="checkbox" id="confirm" name="confirm" />
           <label for="confirm" style="font-size: 11px; color: #4f4f4f"
             >Save this information for next time</label
           >
         </div>
-        <button>Continue</button>
       </section>
       <section class="ordered-items">
         <div class="item flex">
