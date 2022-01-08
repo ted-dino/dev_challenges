@@ -17,12 +17,26 @@
       type="image/x-icon"
     />
     <title>Eddie</title>
+    <script src="./app.js" defer></script>
   </head>
   <body>
     <header class="header container flex">
-      <h3 class="header-brand">Edie</h3>
+      <div>
+        <h3 class="header-brand">Edie</h3>
+      </div>
+      <button
+        class="nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+      </button>
       <nav class="nav">
-        <ul class="nav-items flex">
+        <ul
+          id="primary-navigation "
+          class="nav-items flex"
+          data-visible="false"
+        >
           <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="/" class="nav-link">Services</a></li>
           <li class="nav-item"><a href="/" class="nav-link">Our Works</a></li>
@@ -31,8 +45,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main container">
-      <div class="margin_left">
+    <main class="main container ">
+      <div class="margin_left main--top">
         <p class="main__subheader">Unhappy with your website?</p>
         <h1 class="main__header">
           We create beautiful <br />
@@ -45,6 +59,20 @@
           alt="some guys at the meeting"
           class="main__image"
         />
+      </div>
+
+      <div class="margin_left main--bottom">
+        <h3 class="main__header"">Story, emotion <br> and purpose</h3>
+        <p class="main__subheader main__subheader--gray">
+          We help transform your ideas into real world applications that will
+          outperform your toughest competition and help you achieve your
+          strategic goals in short period of time.
+        </p>
+        <div class="email">
+          <label for="email" class="email__label">Want us to contact you?</label>
+          <input type="email" name="email" id="email" class="email__input" placeholder="Email" />
+          <button type="submit" class="email__button">Join</button>
+        </div>
       </div>
     </main>
   </body>
