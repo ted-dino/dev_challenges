@@ -62,7 +62,7 @@ body {
 
 @media (max-width: 23.4375rem) {
   .margin_left {
-    margin-left: 1rem;
+    margin-left: 0;
   }
 }
 
@@ -199,12 +199,66 @@ body {
 }
 
 .email__button {
+  padding: 0.6875rem 1.75rem;
   position: absolute;
-  right: 4px;
-  bottom: 4px;
+  right: 0.25rem;
+  bottom: 0.25rem;
 
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
   background: var(--clr-light);
   border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  color: var(--gray-6);
+}
+
+.services__header {
+  margin-top: min(10vw, 12.5rem);
+  margin-bottom: 2.625rem;
+}
+
+.service {
+  padding: 1.875rem;
+  max-width: 21.3125rem;
+  border-radius: 1.5rem;
+}
+
+.service:hover {
+  box-shadow: 0px 0.625rem 1.875rem rgba(51, 51, 51, 0.1);
+}
+
+.service > * {
+  margin-block: 1.5625rem;
+}
+
+.service .fa {
+  margin-top: 0;
+  padding: 1.25rem;
+  font-size: 1.6875rem;
+  color: #fff;
+  background: var(--clr-light);
+  border-radius: 1rem;
+}
+
+.service__name {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: var(--gray-1);
+}
+
+.service__description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--gray-2);
+}
+
+.service__link {
+  padding: 0.5625rem 0.8125rem;
+  display: block;
+  width: 7.25rem;
+  height: 2.625rem;
+  background: #e0e0e0;
+  border-radius: 0.75rem;
+  color: var(--gray-3);
 }
