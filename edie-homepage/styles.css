@@ -233,12 +233,12 @@ header.scroll-down {
   color: var(--gray-6);
 }
 
-#services {
+.section-container {
   width: min(100%, 69.25rem);
   margin-inline: auto;
 }
 
-.services__header {
+.section__header {
   margin-top: min(10vw, 12.5rem);
   margin-bottom: 2.625rem;
 
@@ -313,4 +313,69 @@ header.scroll-down {
   gap: 2.5em;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.project {
+  display: block;
+}
+
+.project div {
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.project-thumbnail {
+  transition: 0.5s all ease-in-out;
+  width: 100%;
+  height: auto;
+}
+
+.project-thumbnail:hover {
+  transform: scale(1.5);
+}
+
+.project-stack {
+  font-size: 0.8125rem;
+  color: var(--gray-3);
+}
+
+.project-name {
+  font-size: clamp(1.13rem, 1.02rem + 0.54vw, 1.5rem);
+  color: var(--gray-1);
+  font-weight: 500;
+}
+
+.see-more {
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: var(--clr-light);
+}
+
+.see-more:hover {
+  text-decoration: underline;
+}
+
+.see-more * {
+  color: var(--clr-light);
+}
+
+@media (min-width: 48.0625rem) {
+  .projects-container {
+    grid-template-columns: auto auto;
+  }
+  .project:nth-child(odd) {
+    margin-top: 9.375rem;
+  }
+  .see-more {
+    grid-column-start: 2;
+    margin-left: auto;
+    margin-top: -46px;
+  }
 }

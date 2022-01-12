@@ -16,7 +16,6 @@ navToggle.addEventListener("click", () => {
 });
 
 links.forEach((link) => {
-  console.log(link);
   link.addEventListener("click", () => {
     visibility = nav.getAttribute("data-visible");
     nav.setAttribute("data-visible", false);

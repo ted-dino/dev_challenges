@@ -38,15 +38,15 @@
           class="nav-items flex"
           data-visible="false"
         >
-          <li class="nav-item"><a href="#" class="nav-link active-link">Home</a></li>
-          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-          <li class="nav-item"><a href="/" class="nav-link">Our Works</a></li>
+          <li class="nav-item"><a href="#home" class="nav-link active-link">Home</a></li>
+          <li class="nav-item"><a href="/#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Our Works</a></li>
           <li class="nav-item"><a href="/" class="nav-link">Clients</a></li>
           <li class="nav-item"><a href="/" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main class="main container">
+    <main id="home" class="main container">
       <div class="margin_left main--top">
         <p class="main__subheader">Unhappy with your website?</p>
         <h1 class="main__header">
@@ -76,8 +76,8 @@
         </div>
       </div>
 
-      <section id="services">
-        <h2 class="services__header">We offer high <br> demand services  </h2>
+      <section id="services" class="section-container">
+        <h2 class="section__header">We offer high <br> demand services  </h2>
   
         <div class="service-container flex">
           <div class="service">
@@ -100,6 +100,42 @@
           </div>
         </div>
       </section>
+
+      <section id="projects" class="section-container">
+        <h2 class="section__header">Good design means <br> good business</h2>
+
+        <div class="projects-container">
+          <div class="project">
+            <div><a href="#projects"><img aria-hidden="true" loading="lazy" src="./assets/smarthome.jpg" alt="project thumbnail" class="project-thumbnail"></a></div>
+            <span class="project-stack">Full stack application</span>
+            <h3 class="project-name">Smart home dashboard</h3>
+          </div>
+          <div class="project">
+            <div><a href="#projects"><img aria-hidden="true" loading="lazy" src="./assets/onboard.png" alt="project thumbnail" class="project-thumbnail"></a></div>
+            <span class="project-stack">UX/UI design</span>
+            <h3 class="project-name">Onboard application</h3>
+          </div>
+          <div class="project">
+            <div><a href="#projects"><img aria-hidden="true" loading="lazy" src="./assets/booking.png" alt="project thumbnail" class="project-thumbnail"></a></div>
+            <span class="project-stack">Mobile application</span>
+            <h3 class="project-name">Booking system</h3>
+          </div>
+          <div class="project">
+            <div><a href="#projects"><img aria-hidden="true" loading="lazy" src="./assets/juice-product.png" alt="project thumbnail" class="project-thumbnail"></a></div>
+            <span class="project-stack">Front End application</span>
+            <h3 class="project-name">Juice product homepage</h3>
+          </div>
+          <div class="see-more">
+            <a href="#projects">
+              see more 
+              <span class="fa fa-long-arrow-right"></span>
+            </a>
+          </div>
+        </div>
+        
+      </section>
+
+      <section class="team"></section>
     </main>
 
     
