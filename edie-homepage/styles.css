@@ -28,11 +28,13 @@ button {
 }
 
 ul {
+  padding: 0;
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 :root {
@@ -74,6 +76,9 @@ body {
   display: flex;
   align-items: center;
   gap: 3rem;
+}
+.grid {
+  display: grid;
 }
 
 .sr-only {
@@ -169,7 +174,7 @@ header.scroll-down {
 }
 
 .main {
-  margin-top: clamp(1rem, 7vw, 6.5rem);
+  padding-top: clamp(1rem, 7vw, 6.5rem);
 }
 .main__subheader {
   font-weight: 500;
@@ -244,8 +249,8 @@ header.scroll-down {
 
   font-size: clamp(1.5rem, 1.29rem + 1.07vw, 2.25rem);
   font-weight: 500;
-  line-height: 54px;
-  color: #333333;
+  line-height: min(10vw, 3.5rem);
+  color: var(--gray-1);
 }
 
 .service {
@@ -316,7 +321,6 @@ header.scroll-down {
 }
 
 .projects-container {
-  display: grid;
   grid-template-rows: auto;
   justify-content: center;
   gap: 1.5rem;
@@ -358,12 +362,162 @@ header.scroll-down {
   color: var(--clr-light);
 }
 
-.see-more:hover {
-  text-decoration: underline;
-}
-
 .see-more * {
   color: var(--clr-light);
+}
+
+.team {
+  margin-top: min(10%, 15.0625rem);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team-statement {
+  max-width: 17.5rem;
+}
+
+.team-statement span {
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: var(--clr-dark);
+}
+
+.team-statement h4 {
+  font-weight: 500;
+  font-size: 2.25rem;
+  color: var(--gray-1);
+}
+
+.team-statement p {
+  color: var(--gray-2);
+}
+
+.team-images {
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(3, auto);
+  gap: 1rem;
+}
+
+.team-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  opacity: 1;
+  transition: opacity 1s ease-in-out 0s;
+  cursor: pointer;
+}
+
+.team-images img:hover {
+  opacity: 0.6;
+}
+
+.team-images > img:nth-child(1) {
+  grid-row: span 2;
+  align-self: center;
+}
+
+.team-images > img:nth-child(2) {
+  grid-column: 2;
+  max-width: 16.25rem;
+  height: auto;
+}
+
+.team-images > img:nth-child(3) {
+  grid-column: 2;
+}
+
+.client {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.client q {
+  display: block;
+  max-width: 58.5625rem;
+  font-weight: 500;
+  font-size: clamp(1.06rem, 0.72rem + 1.7vw, 2.25rem);
+  line-height: min(6vw, 3.5rem);
+  color: var(--gray-1);
+}
+
+.client-info {
+  gap: 1rem;
+}
+
+.client-info img {
+  width: 5.125rem;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+.client-info div h4 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--gray-1);
+}
+
+.client-info div span {
+  font-weight: 500;
+  font-size: clamp(1rem, 0.96rem + 0.18vw, 1.13rem);
+  color: var(--gray-3);
+}
+
+.footer {
+  padding: 0.75em;
+  margin-top: min(30vw, 8.0625rem);
+  background: #100e1d;
+  color: #fff;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.top {
+  margin-top: min(6vw, 2.875rem);
+  width: min(90%, 69.25rem);
+  flex-direction: column;
+  gap: 3rem;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footer .email {
+  max-width: 21.875rem;
+}
+
+.footer .email label {
+  color: inherit;
+}
+
+.footer .navigation-link {
+  font-size: 1.125rem;
+}
+
+.footer .socials h4 {
+  font-size: 2.25rem;
+  color: var(--gray-6);
+}
+
+.footer .socials span {
+  font-size: 1.5rem;
+  color: var(--gray-6);
+}
+
+.socials .flex {
+  gap: 0.6875rem;
+}
+
+.bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 7.375rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 66.375rem) {
+  .team {
+    justify-content: center;
+  }
 }
 
 @media (min-width: 48.0625rem) {
@@ -376,6 +530,9 @@ header.scroll-down {
   .see-more {
     grid-column-start: 2;
     margin-left: auto;
-    margin-top: -46px;
+    margin-top: -3.125rem;
+  }
+  .top {
+    flex-direction: row;
   }
 }

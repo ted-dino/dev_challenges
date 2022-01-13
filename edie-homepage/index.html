@@ -41,40 +41,42 @@
           <li class="nav-item"><a href="#home" class="nav-link active-link">Home</a></li>
           <li class="nav-item"><a href="/#services" class="nav-link">Services</a></li>
           <li class="nav-item"><a href="#projects" class="nav-link">Our Works</a></li>
-          <li class="nav-item"><a href="/" class="nav-link">Clients</a></li>
-          <li class="nav-item"><a href="/" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="#client" class="nav-link">Clients</a></li>
+          <li class="nav-item"><a href="#cta" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main id="home" class="main container">
-      <div class="margin_left main--top">
-        <p class="main__subheader">Unhappy with your website?</p>
-        <h1 class="main__header">
-          We create beautiful <br />
-          and fast web services
-        </h1>
-      </div>
-      <div>
-        <img
-          src="./assets/heroImage.jpg"
-          alt="some guys at the meeting"
-          class="main__image"
-        />
-      </div>
 
-      <div class="margin_left main--bottom">
-        <h2 class="main__header"">Story, emotion <br> and purpose</h2>
-        <p class="main__subheader main__subheader--gray">
-          We help transform your ideas into real world applications that will
-          outperform your toughest competition and help you achieve your
-          strategic goals in short period of time.
-        </p>
-        <div class="email">
-          <label for="email" class="email__label">Want us to contact you?</label>
-          <input type="email" name="email" id="email" class="email__input" placeholder="Email" />
-          <button type="submit" class="email__button">Join</button>
+      <section class="hero-section">
+        <div class="margin_left main--top">
+          <p class="main__subheader">Unhappy with your website?</p>
+          <h1 class="main__header">
+            We create beautiful <br />
+            and fast web services
+          </h1>
         </div>
-      </div>
+        <div>
+          <img
+            src="./assets/heroImage.jpg"
+            alt="some guys at the meeting"
+            class="main__image"
+          />
+        </div>
+        <div class="margin_left main--bottom">
+          <h2 class="main__header"">Story, emotion <br> and purpose</h2>
+          <p class="main__subheader main__subheader--gray">
+            We help transform your ideas into real world applications that will
+            outperform your toughest competition and help you achieve your
+            strategic goals in short period of time.
+          </p>
+          <div class="email">
+            <label for="email" class="email__label">Want us to contact you?</label>
+            <input type="email" name="email" id="email" class="email__input" placeholder="Email" />
+            <button type="submit" class="email__button">Join</button>
+          </div>
+        </div>
+      </section>
 
       <section id="services" class="section-container">
         <h2 class="section__header">We offer high <br> demand services  </h2>
@@ -104,7 +106,7 @@
       <section id="projects" class="section-container">
         <h2 class="section__header">Good design means <br> good business</h2>
 
-        <div class="projects-container">
+        <div class="projects-container grid">
           <div class="project">
             <div><a href="#projects"><img aria-hidden="true" loading="lazy" src="./assets/smarthome.jpg" alt="project thumbnail" class="project-thumbnail"></a></div>
             <span class="project-stack">Full stack application</span>
@@ -135,9 +137,62 @@
         
       </section>
 
-      <section class="team"></section>
+      <section class="team flex section-container">
+        <div class="team-statement">
+          <span>Meet the team</span>
+          <h4>We are chilled and a laidback team</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="team-images grid">
+          <img src="./assets/person3.png" alt="random image">
+          <img src="./assets/person1.png" alt="random image">
+          <img src="./assets/person2.png" alt="random image">
+        </div>
+      </section>
+
+      <section id="client" class="client section-container flex team">
+        <q>Fast and outstanding results. Edie understands their customer’s needs. They have a young and talented team.</q>
+        <div class="client-info flex">
+          <img src="./assets/person4.png" alt="nice guy">
+          <div>
+            <h4>Carlos Tran</h4>
+            <span>The Decorate Gatsby</span>
+          </div>
+        </div>
+      </section>
     </main>
 
-    
+    <footer id="cta" class="footer flex">
+        <div class="top flex">
+          <div class="navigation">
+            <ul class="navigation-items">
+              <li class="navigation-item"><a href="#home" class="navigation-link">Home</a></li>
+              <li class="navigation-item"><a href="/#services" class="navigation-link">Services</a></li>
+              <li class="navigation-item"><a href="#projects" class="navigation-link">Our Works</a></li>
+              <li class="navigation-item"><a href="#client" class="navigation-link">Clients</a></li>
+              <li class="navigation-item"><a href="#cta" class="navigation-link">Contact</a></li>
+            </ul>
+          </div>
+          <div class="socials">
+            <h4>Edie</h4>
+            <div class="flex">
+              <a href="#"><span class="fa fa-instagram"></span></a>
+              <a href="#"><span class="fa fa-linkedin"></span></a>
+              <a href="#"><span class="fa fa-twitter"></span></a>
+            </div>
+          </div>
+          <div class="email">
+            <label for="email" class="email__label">Want us to contact you?</label>
+            <input type="email" name="email" id="email" class="email__input" placeholder="Email" />
+            <button type="submit" class="email__button">Join</button>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <p>
+            created by <a href="https://devchallenges.io/portfolio/ted-dino"><strong>Ted Dino</strong></a> - devChallenges.io
+          </p>
+        </div>
+    </footer>
   </body>
 </html>
