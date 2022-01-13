@@ -26,19 +26,6 @@ links.forEach((link) => {
   });
 });
 
-// const nav_item = document.querySelectorAll(".nav-link");
-// const section = document.querySelectorAll("section");
-
-// function activeMenu() {
-//   let len = section.length;
-//   while (--len && window.scrollY + 97 < section[len].offsetTop) {}
-//   nav_item.forEach((ltx) => ltx.classList.remove("active-link"));
-//   nav_item[len].classList.add("active-link");
-// }
-
-// activeMenu();
-// window.addEventListener("scroll", activeMenu);
-
 // Creating a Smart Navbar With Vanilla JavaScript
 // https://css-tricks.com/creating-a-smart-navbar-with-vanilla-javascript/
 
