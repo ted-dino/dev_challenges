@@ -69,6 +69,7 @@ $ code .
 - [Responsive Navbar](https://www.youtube.com/results?search_query=kevin+powell+navbar)
 - [Smart Navbar](https://css-tricks.com/creating-a-smart-navbar-with-vanilla-javascript/)
 - [GIF Compressor](https://gifcompressor.com/) 
+- [Fluid type scale calculator](https://utopia.fyi/type/calculator/)
 
 ## Contact
 
