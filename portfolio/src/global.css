@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font: inherit;
+}
+
+#root {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(90%, 65.375rem);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.border-box {
+  border-radius: 0.75rem;
+  box-shadow: 0px 0px 1.25rem 0px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.skill-clr {
+  background-color: #2f80ed;
+}
+.skill-radius {
+  border-radius: 0.75rem;
+}
+
+.clr-primary {
+  color: #4f4f4f;
+}
+
+.clr-secondary {
+  color: #333333;
+}
+
+.gray-3 {
+  color: #828282;
+}
