@@ -1,43 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;400;500;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
-    <link rel="stylesheet" href="./styles.css" />
-    <link
-      rel="shortcut icon"
-      href="./assets/devchallenges.png"
-      type="image/x-icon"
-    />
-    <title>Eddie</title>
-    <script src="./app.js" defer></script>
-  </head>
-  <body>
-    <header class="header container flex">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Experience beautiful and lightning-fast web services with our expert team. From design to deployment, we create web solutions that are both visually stunning and perform flawlessly. Contact us today to see how we can transform your online presence.">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;400;500;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="shortcut icon" href="./assets/devchallenges.png" type="image/x-icon" />
+  <title>Eddie</title>
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+  <header class="head">
+    <div class="header container flex">
       <div>
-        <h3 class="header-brand">Edie</h3>
+        <span class="header-brand">Edie</span>
       </div>
-      <button
-        class="nav-toggle"
-        aria-controls="primary-navigation"
-        aria-expanded="false"
-      >
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
         <span class="sr-only">Menu</span>
       </button>
       <nav class="nav">
-        <ul
-          id="primary-navigation "
-          class="nav-items flex"
-          data-visible="false"
-        >
+        <ul id="primary-navigation " class="nav-items flex" data-visible="false">
           <li class="nav-item"><a href="#home" class="nav-link active-link">Home</a></li>
           <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
           <li class="nav-item"><a href="#projects" class="nav-link">Our Works</a></li>
@@ -45,154 +36,173 @@
           <li class="nav-item"><a href="#cta" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-    </header>
-    <main id="home" class="main container">
+    </div>
+  </header>
+  <main id="home" class="main container">
 
-      <section class="hero-section">
-        <div class="margin_left main--top">
-          <p class="main__subheader">Unhappy with your website?</p>
-          <h1 class="main__header">
-            We create beautiful <br />
-            and fast web services
-          </h1>
+    <section class="hero-section">
+      <div class="margin_left main--top">
+        <p class="main__subheader">Unhappy with your website?</p>
+        <h1 class="main__header">
+          We create beautiful <br />
+          and fast web services
+        </h1>
+      </div>
+      <div>
+        <picture>
+          <source media="(max-width:900px)" srcset="./assets/md-heroImage.webp">
+          <source media="(max-width:375px)" srcset="./assets/sm-heroImage.webp">
+          <img src="./assets/heroImage.webp" alt="some guys at the meeting" class="main__image" />
+        </picture>
+      </div>
+      <div class="margin_left main--bottom">
+        <h2 class="main__header"">Story, emotion <br> and purpose</h2>
+          <p class=" main__subheader main__subheader--gray">
+          We help transform your ideas into real world applications that will
+          outperform your toughest competition and help you achieve your
+          strategic goals in short period of time.
+          </p>
+          <div class="email">
+            <label for="upper-email" class="email__label">Want us to contact you?</label>
+            <input type="email" name="email" id="upper-email" class="email__input" placeholder="Email" />
+            <button type="submit" class="email__button">Join</button>
+          </div>
+      </div>
+    </section>
+
+    <section id="services" class="section-container">
+      <h2 class="section__header">We offer high <br> demand services </h2>
+
+      <div class="service-container flex">
+        <div class="service">
+          <i class="fa fa-pencil"></i>
+          <h3 class="service__name">UI/UX Design</h3>
+          <p class="service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+            consequat aliquet id quis turpis.</p>
+          <a href="#services" class="service__link">Get started</a>
         </div>
+        <div class="service">
+          <i class="fa fa-code"></i>
+          <h3 class="service__name">Front End</h3>
+          <p class="service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+            consequat aliquet id quis turpis.</p>
+          <a href="#services" class="service__link">Get started</a>
+        </div>
+        <div class="service">
+          <i class="fa fa-bars"></i>
+          <h3 class="service__name">Back End</h3>
+          <p class="service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+            consequat aliquet id quis turpis.</p>
+          <a href="#services" class="service__link">Get started</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-container">
+      <h2 class="section__header">Good design means <br> good business</h2>
+
+      <div class="projects-container grid">
+        <div class="project">
+          <div><a href="#projects" aria-label="Link to another page"></a><img aria-hidden="true" loading="lazy"
+              src="./assets/smarthome.webp" alt="project thumbnail" class="project-thumbnail" width="200"
+              height="200"></a></div>
+          <span class="project-stack">Full stack application</span>
+          <h3 class="project-name">Smart home dashboard</h3>
+        </div>
+        <div class="project">
+          <div><a href="#projects" aria-label="Link to another page"><img aria-hidden="true" loading="lazy"
+                src="./assets/onboard.webp" alt="project thumbnail" class="project-thumbnail" width="200"
+                height="200"></a></div>
+          <span class="project-stack">UX/UI design</span>
+          <h3 class="project-name">Onboard application</h3>
+        </div>
+        <div class="project">
+          <div><a href="#projects" aria-label="Link to another page"><img aria-hidden="true" loading="lazy"
+                src="./assets/booking.webp" alt="project thumbnail" class="project-thumbnail" width="200"
+                height="200"></a></div>
+          <span class="project-stack">Mobile application</span>
+          <h3 class="project-name">Booking system</h3>
+        </div>
+        <div class="project">
+          <div><a href="#projects" aria-label="Link to another page"><img aria-hidden="true" loading="lazy"
+                src="./assets/juice-product.webp" alt="project thumbnail" class="project-thumbnail" width="200"
+                height="200"></a></div>
+          <span class="project-stack">Front End application</span>
+          <h3 class="project-name">Juice product homepage</h3>
+        </div>
+        <div class="see-more">
+          <a href="#projects" aria-label="Link to another page">
+            see more
+            <span class="fa fa-long-arrow-right"></span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="team flex section-container">
+      <div class="team-statement">
+        <span>Meet the team</span>
+        <h4>We are chilled and a laidback team</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="team-images grid">
+        <img src="./assets/person3.webp" alt="random image">
+        <img src="./assets/person1.webp" alt="random image">
+        <img src="./assets/person2.webp" alt="random image">
+      </div>
+    </section>
+
+    <section id="client" class="client section-container flex team">
+      <q>Fast and outstanding results. Edie understands their customer’s needs. They have a young and talented team.</q>
+      <div class="client-info flex">
+        <img src="./assets/person4.webp" alt="nice guy">
         <div>
-          <img
-            src="./assets/heroImage.jpg"
-            alt="some guys at the meeting"
-            class="main__image"
-          />
+          <h4>Carlos Tran</h4>
+          <span>The Decorate Gatsby</span>
         </div>
-        <div class="margin_left main--bottom">
-          <h2 class="main__header"">Story, emotion <br> and purpose</h2>
-          <p class="main__subheader main__subheader--gray">
-            We help transform your ideas into real world applications that will
-            outperform your toughest competition and help you achieve your
-            strategic goals in short period of time.
-          </p>
-          <div class="email">
-            <label for="email" class="email__label">Want us to contact you?</label>
-            <input type="email" name="email" id="email" class="email__input" placeholder="Email" />
-            <button type="submit" class="email__button">Join</button>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <section id="services" class="section-container">
-        <h2 class="section__header">We offer high <br> demand services  </h2>
-  
-        <div class="service-container flex">
-          <div class="service">
-            <i class="fa fa-pencil"></i>
-            <h3 class="service__name">UI/UX Design</h3>
-            <p class="service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-            <a href="#services" class="service__link">Get started</a>
-          </div>
-          <div class="service">
-            <i class="fa fa-code"></i>
-            <h3 class="service__name">Front End</h3>
-            <p class="service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-            <a href="#services" class="service__link">Get started</a>
-          </div>
-          <div class="service">
-            <i class="fa fa-bars"></i>
-            <h3 class="service__name">Back End</h3>
-            <p class="service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-            <a href="#services" class="service__link">Get started</a>
-          </div>
+  <footer id="cta" class="footer flex">
+    <div class="top flex">
+      <div class="navigation">
+        <ul class="navigation-items">
+          <li class="navigation-item"><a href="#home" aria-label="Link to another page" class="navigation-link">Home</a>
+          </li>
+          <li class="navigation-item"><a href="#services" aria-label="Link to another page"
+              class="navigation-link">Services</a></li>
+          <li class="navigation-item"><a href="#projects" aria-label="Link to another page" class="navigation-link">Our
+              Works</a></li>
+          <li class="navigation-item"><a href="#client" aria-label="Link to another page"
+              class="navigation-link">Clients</a></li>
+          <li class="navigation-item"><a href="#cta" aria-label="Link to another page"
+              class="navigation-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="socials">
+        <h4>Edie</h4>
+        <div class="flex">
+          <a href="#" aria-label="Link to another page"><span class="fa fa-instagram"></span></a>
+          <a href="#" aria-label="Link to another page"><span class="fa fa-linkedin"></span></a>
+          <a href="#" aria-label="Link to another page"><span class="fa fa-twitter"></span></a>
         </div>
-      </section>
+      </div>
+      <div class="email">
+        <label for="email" class="email__label">Want us to contact you?</label>
+        <input type="email" name="email" id="email" class="email__input" placeholder="Email" />
+        <button type="submit" class="email__button">Join</button>
+      </div>
+    </div>
 
-      <section id="projects" class="section-container">
-        <h2 class="section__header">Good design means <br> good business</h2>
+    <div class="bottom">
+      <p>
+        created by <a href="https://devchallenges.io/portfolio/ted-dino"><strong>Ted Dino</strong></a> -
+        devChallenges.io
+      </p>
+    </div>
+  </footer>
+</body>
 
-        <div class="projects-container grid">
-          <div class="project">
-            <div><a href="#projects"><img aria-hidden="true" loading="lazy" src="./assets/smarthome.jpg" alt="project thumbnail" class="project-thumbnail"></a></div>
-            <span class="project-stack">Full stack application</span>
-            <h3 class="project-name">Smart home dashboard</h3>
-          </div>
-          <div class="project">
-            <div><a href="#projects"><img aria-hidden="true" loading="lazy" src="./assets/onboard.png" alt="project thumbnail" class="project-thumbnail"></a></div>
-            <span class="project-stack">UX/UI design</span>
-            <h3 class="project-name">Onboard application</h3>
-          </div>
-          <div class="project">
-            <div><a href="#projects"><img aria-hidden="true" loading="lazy" src="./assets/booking.png" alt="project thumbnail" class="project-thumbnail"></a></div>
-            <span class="project-stack">Mobile application</span>
-            <h3 class="project-name">Booking system</h3>
-          </div>
-          <div class="project">
-            <div><a href="#projects"><img aria-hidden="true" loading="lazy" src="./assets/juice-product.png" alt="project thumbnail" class="project-thumbnail"></a></div>
-            <span class="project-stack">Front End application</span>
-            <h3 class="project-name">Juice product homepage</h3>
-          </div>
-          <div class="see-more">
-            <a href="#projects">
-              see more 
-              <span class="fa fa-long-arrow-right"></span>
-            </a>
-          </div>
-        </div>
-        
-      </section>
-
-      <section class="team flex section-container">
-        <div class="team-statement">
-          <span>Meet the team</span>
-          <h4>We are chilled and a laidback team</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="team-images grid">
-          <img src="./assets/person3.png" alt="random image">
-          <img src="./assets/person1.png" alt="random image">
-          <img src="./assets/person2.png" alt="random image">
-        </div>
-      </section>
-
-      <section id="client" class="client section-container flex team">
-        <q>Fast and outstanding results. Edie understands their customer’s needs. They have a young and talented team.</q>
-        <div class="client-info flex">
-          <img src="./assets/person4.png" alt="nice guy">
-          <div>
-            <h4>Carlos Tran</h4>
-            <span>The Decorate Gatsby</span>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer id="cta" class="footer flex">
-        <div class="top flex">
-          <div class="navigation">
-            <ul class="navigation-items">
-              <li class="navigation-item"><a href="#home" class="navigation-link">Home</a></li>
-              <li class="navigation-item"><a href="#services" class="navigation-link">Services</a></li>
-              <li class="navigation-item"><a href="#projects" class="navigation-link">Our Works</a></li>
-              <li class="navigation-item"><a href="#client" class="navigation-link">Clients</a></li>
-              <li class="navigation-item"><a href="#cta" class="navigation-link">Contact</a></li>
-            </ul>
-          </div>
-          <div class="socials">
-            <h4>Edie</h4>
-            <div class="flex">
-              <a href="#"><span class="fa fa-instagram"></span></a>
-              <a href="#"><span class="fa fa-linkedin"></span></a>
-              <a href="#"><span class="fa fa-twitter"></span></a>
-            </div>
-          </div>
-          <div class="email">
-            <label for="email" class="email__label">Want us to contact you?</label>
-            <input type="email" name="email" id="email" class="email__input" placeholder="Email" />
-            <button type="submit" class="email__button">Join</button>
-          </div>
-        </div>
-
-        <div class="bottom">
-          <p>
-            created by <a href="https://devchallenges.io/portfolio/ted-dino"><strong>Ted Dino</strong></a> - devChallenges.io
-          </p>
-        </div>
-    </footer>
-  </body>
 </html>

@@ -1,6 +1,7 @@
 const nav = document.querySelector(".nav-items");
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelectorAll(".nav-link");
+const headerHeight = document.querySelector(".header").offsetHeight;
 
 let visibility;
 
@@ -29,7 +30,8 @@ links.forEach((link) => {
 // Creating a Smart Navbar With Vanilla JavaScript
 // https://css-tricks.com/creating-a-smart-navbar-with-vanilla-javascript/
 
-const header = document.querySelector("header");
+const html = document.documentElement;
+const header = document.querySelector(".head");
 const supportPageOffset = window.pageXOffset !== undefined;
 const isCSS1Compat = (document.compatMode || "") === "CSS1Compat";
 
@@ -60,6 +62,7 @@ const handleNavScroll = () => {
     header.classList.add("scroll-up");
     header.classList.remove("scroll-down");
   }
+  html.style.setProperty("--scroll-padding", `${headerHeight + 5}px`);
 };
 
 var throttleTimer;
